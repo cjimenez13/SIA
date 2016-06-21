@@ -1,6 +1,7 @@
 package Model.Data;
 
 import Model.Data.DataAccessObject.AccountDAO;
+import Model.Data.DataAccessObject.ProductDAO;
 
 public abstract class DAOFactory {
 
@@ -15,4 +16,5 @@ public abstract class DAOFactory {
         }
     }
     public abstract AccountDAO getAccountDAO();
+    public abstract ProductDAO getProductDAO();
 }

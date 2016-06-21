@@ -10,4 +10,17 @@ public class Section {
         this._Name = pName;
         this._Description = pDescription;
     }
+
+    public int getIDSection() {
+        return _IDSection;
+    }
+
+    public String getName() {
+        return _Name;
+    }
+
+    public String getDescription() {
+        return _Description;
+    }
+    
 }

@@ -2,6 +2,8 @@ package Model.Data;
 
 import Model.Data.DataAccessObject.AccountDAO;
 import Model.Data.DataAccessObject.MySQL.MySQLAccountDAO;
+import Model.Data.DataAccessObject.MySQL.MySQLProductDAO;
+import Model.Data.DataAccessObject.ProductDAO;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -31,5 +33,10 @@ public class MySQLDAOFactory extends DAOFactory {
     @Override
     public AccountDAO getAccountDAO() {
         return new MySQLAccountDAO();
+    }
+
+    @Override
+    public ProductDAO getProductDAO() {
+        return new MySQLProductDAO();
     }
 }

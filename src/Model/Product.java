@@ -3,68 +3,66 @@ package Model;
 public class Product {
     private int _IDProduct;
     private String _Name;
-    private String _Category;
-    private String _Type;
-    private String _Brand;
-    private String _TypePackaging;
+    private ProductCategory _Category;
+    private ProductType _Type;
+    private ProductBrand _Brand;
+    private Packing _TypePackaging;
+    private Section _Section;
     private int _Volume;
     private int _Price;
-
-    public String getCategory() {
-        return _Category;
+    
+    public Product(int pID, String pName, ProductCategory pCategory, ProductType pType, ProductBrand pBrand, 
+            Packing pTypePacking, int pVolume, int pPrice){
+        this._IDProduct = pID;
+        this._Name = pName;
+        this._Category = pCategory;
+        this._Type = pType;
+        this._Brand = pBrand;
+        this._TypePackaging = pTypePacking;
+        this._Volume =  pVolume;
+        this._Price = pPrice;
+        
+        
     }
 
-    public void setCategory(String _Category) {
-        this._Category = _Category;
+    public Section getSection() {
+        return _Section;
     }
 
-    public String getType() {
-        return _Type;
-    }
-
-    public void setType(String _Type) {
-        this._Type = _Type;
+    
+    public int getIDProduct() {
+        return _IDProduct;
     }
 
     public String getName() {
         return _Name;
     }
 
-    public void setName(String _Name) {
-        this._Name = _Name;
+    public ProductCategory getCategory() {
+        return _Category;
     }
 
-    public String getBrand() {
+    public ProductType getType() {
+        return _Type;
+    }
+
+    public ProductBrand getBrand() {
         return _Brand;
     }
 
-    public void setBrand(String _Brand) {
-        this._Brand = _Brand;
-    }
-
-    public String getTypePackaging() {
+    public Packing getTypePackaging() {
         return _TypePackaging;
-    }
-
-    public void setTypePackaging(String _TypePackaging) {
-        this._TypePackaging = _TypePackaging;
     }
 
     public int getVolume() {
         return _Volume;
     }
 
-    public void setVolume(int _Volume) {
-        this._Volume = _Volume;
-    }
-
     public int getPrice() {
         return _Price;
     }
+    
 
-    public void setPrice(int _Price) {
-        this._Price = _Price;
-    }
     
     
     

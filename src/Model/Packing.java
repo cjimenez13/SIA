@@ -11,4 +11,18 @@ public class Packing {
         this._Name = pName;
         this._MeasureUnit = pMeasureUnit;
     }
+
+    public int getIdPacking() {
+        return _IdPacking;
+    }
+
+    public String getName() {
+        return _Name;
+    }
+
+    public String getMeasureUnit() {
+        return _MeasureUnit;
+    }
+    
 }
+
